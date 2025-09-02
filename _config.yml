@@ -99,7 +99,6 @@ scholar:
   locale: en
   source: assets/bib
   bibliography: references.bib
-  bibliography_template: bibliography
 
 # Excludes
 exclude:

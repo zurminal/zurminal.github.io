@@ -9,4 +9,3 @@ link: "https://www.carscoops.com/2021/12/honda-develops-2d-material-that-is-hail
 ---
 
 Media coverage describing advances in 2D materials with potential impact on quantum‑scale electronic devices.
-

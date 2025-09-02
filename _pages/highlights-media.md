@@ -5,7 +5,6 @@ layout: single
 author_profile: true
 ---
 
-{% assign media = site.highlights | where_exp: "i", "i.tags contains 'media' or i.tags contains 'cover'" %}
+{% assign media = site.highlights | where_exp: "i", "i.tags contains 'media'" %}
 
 {% include highlights-list.html items=media %}
-

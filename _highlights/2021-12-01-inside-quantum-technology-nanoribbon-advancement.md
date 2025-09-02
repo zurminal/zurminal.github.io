@@ -9,4 +9,3 @@ link: "https://www.insidequantumtechnology.com/news-archive/honda-research-insti
 ---
 
 Article discussing progress in nanoribbon materials and potential quantum applications.
-

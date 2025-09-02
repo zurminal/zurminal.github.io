@@ -9,4 +9,3 @@ link: "https://www.fox35orlando.com/news/ucf-lab-stretching-electronics-into-the
 ---
 
 FOX 35 Orlando covered our work on stretchable conductors and flexible electronic materials, highlighting potential applications in wearable devices and soft robotics.
-

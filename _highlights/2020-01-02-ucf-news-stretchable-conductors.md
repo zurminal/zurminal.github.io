@@ -9,4 +9,3 @@ link: "https://www.ucf.edu/news/ucf-researchers-make-super-stretchable-e-materia
 ---
 
 University of Central Florida News covered our research on kirigami‑based nanostructures that enable highly stretchable, conductive materials for next‑generation flexible electronics.
-

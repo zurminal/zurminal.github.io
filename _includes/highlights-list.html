@@ -1,0 +1,28 @@
+{% comment %}
+Renders a grid of highlight items.
+Params:
+  - items: collection of docs
+  - limit: optional integer to slice the list
+{% endcomment %}
+
+{% assign list = include.items %}
+{% if include.limit %}
+  {% assign list = list | slice: 0, include.limit %}
+{% endif %}
+
+<div class="grid__wrapper">
+  {% for item in list %}
+  <div class="grid__item">
+    <article class="archive__item">
+      <h2 class="archive__item-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+      {% if item.excerpt %}
+        <p class="archive__item-excerpt">{{ item.excerpt }}</p>
+      {% endif %}
+      {% if item.link %}
+        <p><a class="btn btn--small" href="{{ item.link }}" target="_blank" rel="noopener">Source</a></p>
+      {% endif %}
+    </article>
+  </div>
+  {% endfor %}
+</div>
+

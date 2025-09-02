@@ -22,10 +22,6 @@ feature_row:
     excerpt: "Notable updates, media, awards, or milestones."
     url: "/highlights/"
     btn_label: "Browse"
-  - title: "CV"
-    excerpt: "Download a concise curriculum vitae."
-    url: "/cv/"
-    btn_label: "Open"
 ---
 
 {% include feature_row id="intro" type="center" %}

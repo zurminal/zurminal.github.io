@@ -1,6 +1,6 @@
 # Site settings
 title: "Your Name"
-name: "Your Name"
+name: "Emmanuel Okogbue"
 description: "Personal website"
 url: "https://zurminal.github.io"
 baseurl: ""
@@ -45,13 +45,13 @@ author:
       url: "https://github.com/USERNAME"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/USERNAME"
+      url: "https://www.linkedin.com/in/eokogbue/"
     - label: "Google Scholar"
       icon: "ai ai-google-scholar"
-      url: "https://scholar.google.com/citations?user=SCHOLAR_ID"
+      url: "https://scholar.google.com/citations?user=WWBflpQAAAAJ&hl=en"
     - label: "ORCID"
       icon: "ai ai-orcid"
-      url: "https://orcid.org/ORCID_ID"
+      url: "https://orcid.org/0000-0002-8727-9635"
 
 # Collections
 collections:

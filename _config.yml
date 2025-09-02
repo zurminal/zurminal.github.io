@@ -29,6 +29,10 @@ permalink: /:categories/:title/
 paginate: 5
 paginate_path: "/page:num/"
 
+# Include custom pages directory
+include:
+  - _pages
+
 # Author and social
 author:
   name: "Your Name"

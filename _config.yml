@@ -1,0 +1,110 @@
+# Site settings
+title: "Your Name"
+name: "Your Name"
+description: "Personal website"
+url: "https://zurminal.github.io"
+baseurl: ""
+repository: "zurminal/zurminal.github.io"
+timezone: "America/Los_Angeles"
+locale: "en-US"
+
+# Theme
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-scholar
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: "/page:num/"
+
+# Author and social
+author:
+  name: "Your Name"
+  avatar: "/assets/images/avatar.jpg" # replace with your image
+  bio: "Short generic bio goes here."
+  location: "PST (US)"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/USERNAME"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/USERNAME"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=SCHOLAR_ID"
+    - label: "ORCID"
+      icon: "ai ai-orcid"
+      url: "https://orcid.org/ORCID_ID"
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:title/
+  highlights:
+    output: true
+    permalink: /highlights/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: true
+  - scope:
+      path: "_publications"
+      type: "publications"
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: "_highlights"
+      type: "highlights"
+    values:
+      layout: single
+      author_profile: true
+
+# Jekyll Scholar (Publications)
+scholar:
+  style: apa
+  locale: en
+  source: assets/bib
+  bibliography: references.bib
+  bibliography_template: bibliography
+
+# Excludes
+exclude:
+  - README.md
+  - vendor
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+
+# Analytics
+google_analytics: false
+analytics: false

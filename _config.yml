@@ -1,5 +1,5 @@
 # Site settings
-title: "Your Name"
+title: "Emmanuel Okogbue - Researcher and Engineer"
 name: "Emmanuel Okogbue"
 description: "Personal website"
 url: "https://zurminal.github.io"
@@ -35,9 +35,9 @@ include:
 
 # Author and social
 author:
-  name: "Your Name"
+  name: "Emmanuel Okogbue "
   avatar: "/assets/images/avatar.jpg" # replace with your image
-  bio: "Short generic bio goes here."
+  bio: "Testing Bio . .  "
   location: "PST (US)"
   links:
     - label: "GitHub"

@@ -1,5 +1,5 @@
 ---
-title: "Media: Inside Quantum Technology — Nanoribbon Advancement"
+title: "Inside Quantum Technology — Nanoribbon Advancement"
 date: 2021-12-01
 excerpt: "Coverage of nanoribbon research with implications for quantum technologies."
 tags: [media]

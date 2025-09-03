@@ -1,5 +1,5 @@
 ---
-title: "Media: FOX 35 Orlando — Stretchable Conductors Research"
+title: "FOX 35 Orlando — Stretchable Conductors Research"
 date: 2020-01-01
 excerpt: "Featured on FOX 35 Orlando for research advancing stretchable conductors and flexible electronics."
 tags: [media]

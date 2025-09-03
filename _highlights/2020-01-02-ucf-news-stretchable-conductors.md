@@ -1,5 +1,5 @@
 ---
-title: "Media: UCF News — Super‑Stretchable Electronic Material"
+title: "UCF News — Super‑Stretchable Electronic Material"
 date: 2020-01-02
 excerpt: "UCF News feature on kirigami‑enabled, super‑stretchable electronic material for flexible devices."
 tags: [media]

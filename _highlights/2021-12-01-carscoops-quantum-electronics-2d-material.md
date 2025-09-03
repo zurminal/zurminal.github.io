@@ -1,7 +1,7 @@
 ---
-title: "Media: CarScoops — 2D Material Breakthrough for Quantum Electronics"
+title: "CarScoops — 2D Material Breakthrough for Quantum Electronics"
 date: 2021-12-01
-excerpt: "Coverage of a 2D material development hailed as a breakthrough with implications for quantum electronics."
+excerpt: "Coverage of a 2D material development during my time at HRI hailed as a breakthrough with implications for quantum electronics."
 tags: [media]
 # Optional card image for the grid:
 # image: /assets/images/highlights/carscoops-2d-material.jpg

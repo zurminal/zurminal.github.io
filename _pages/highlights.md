@@ -6,7 +6,7 @@ author_profile: false
 classes: wide
 ---
 
-Browse highlights by category.
+A collection of awards, media features, and milestones from my academic and professional journey.
 
 {% assign awards = site.highlights | where_exp: "i", "i.tags contains 'awards'" %}
 {% assign media = site.highlights | where_exp: "i", "i.tags contains 'media'" %}

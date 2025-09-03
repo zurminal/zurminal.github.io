@@ -14,18 +14,18 @@ Browse highlights by category.
 ## Awards
 {% include highlights-list.html items=awards limit=6 %}
 
-[View all awards](/highlights/awards/)
+<a class="highlights-viewall" href="/highlights/awards/">View all awards</a>
 
 <div class="section-separator"></div>
 
 ## Media Coverage
 {% include highlights-list.html items=media limit=6 %}
 
-[View all media](/highlights/media/)
+<a class="highlights-viewall" href="/highlights/media/">View all media</a>
 
 <div class="section-separator"></div>
 
 ## Career
 {% include highlights-list.html items=career limit=6 %}
 
-[View all career highlights](/highlights/career/)
+<a class="highlights-viewall" href="/highlights/career/">View all career highlights</a>

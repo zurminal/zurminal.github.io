@@ -1,0 +1,52 @@
+/* Highlights grid and card styling */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem 1.25rem;
+  align-items: stretch;
+  clear: both;
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+.highlights-card {
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.highlights-card .archive__item-title {
+  font-size: 1rem;
+  margin: 0 0 0.35rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.highlights-card .archive__item-excerpt,
+.highlights-card p.archive__item-excerpt {
+  margin: 0 0 0.6rem 0;
+  color: #666;
+  font-size: 0.92rem;
+}
+
+.highlights-card .actions {
+  margin-top: auto;
+}
+
+.highlights-card .btn.btn--small { font-size: 0.8rem; }
+
+/* Section separators for the highlights hub */
+.section-separator {
+  border-top: 1px solid #eaeaea;
+  margin: 1.5rem 0 1.25rem 0;
+}
+
+/* Tighten subhead spacing */
+.page__content h2 { margin-top: 1.5rem; clear: both; }
+
+.highlights-viewall { display: block; margin: 0.5rem 0 1rem; clear: both; }

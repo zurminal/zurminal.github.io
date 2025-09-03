@@ -1,11 +1,11 @@
 ---
-title: "NanoFlorida International Conference — First Prize"
+title: "First Prize — NanoFlorida International Conference"
 date: 2019-01-01
-excerpt: "Won First Prize research award among 137 competitors at NanoFlorida 2019."
+excerpt: "Awarded First Prize for research at the NanoFlorida 2019 conference, selected from 137 participants."
 tags: [awards]
 # Optional card image for the grid:
 # image: /assets/images/highlights/nanoflorida-2019.jpg
 link: "https://www.nanoflo.org/nanoflorida2019"
 ---
 
-Recognized with the top research prize at the NanoFlorida International Conference, finishing first among 137 competitors.
+Received First Prize for research at the NanoFlorida International Conference in 2019, recognized from a field of 137 participants.

@@ -6,6 +6,6 @@ author_profile: true
 toc: false
 ---
 
-Below is a generated list from your BibTeX file. Replace placeholders in `assets/bib/references.bib`.
+Below is a generated list from your BibTeX file, newest first. Replace or edit entries in `assets/bib/references.bib`.
 
-{% bibliography %}
+{% bibliography --group_by year --group_order descending %}

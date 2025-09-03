@@ -5,7 +5,7 @@ Params:
   - limit: optional integer to slice the list
 {% endcomment %}
 
-{% assign list = include.items %}
+{% assign list = include.items | sort: 'date' | reverse %}
 {% if include.limit %}
   {% assign list = list | slice: 0, include.limit %}
 {% endif %}

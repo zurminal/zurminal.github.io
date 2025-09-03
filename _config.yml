@@ -1,5 +1,5 @@
 # Site settings
-title: "Emmanuel Okogbue - Researcher and Engineer"
+title: "Emmanuel Okogbue"
 name: "Emmanuel Okogbue"
 description: "Personal website"
 url: "https://zurminal.github.io"
@@ -99,6 +99,8 @@ scholar:
   locale: en
   source: assets/bib
   bibliography: references.bib
+  sort_by: year
+  order: descending
 
 # Excludes
 exclude:

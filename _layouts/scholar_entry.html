@@ -5,8 +5,31 @@ Available variables: entry (hash of bib fields)
 {% endcomment %}
 
 <div class="pub-entry">
+  {% assign href = nil %}
+  {% if entry.doi %}
+    {% assign href = 'https://doi.org/' | append: entry.doi %}
+  {% endif %}
+  {% if href == nil or href == '' %}
+    {% if entry.url %}{% assign href = entry.url %}{% endif %}
+  {% endif %}
+  {% if href == nil or href == '' %}
+    {% if entry.URL %}{% assign href = entry.URL %}{% endif %}
+  {% endif %}
+  {% if href == nil or href == '' %}
+    {% if entry.link %}{% assign href = entry.link %}{% endif %}
+  {% endif %}
+  {% if href == nil or href == '' %}
+    {% if entry.note and entry.note contains 'http' %}{% assign href = entry.note %}{% endif %}
+  {% endif %}
+
   {% if entry.title %}
-    <div class="pub-title"><strong>{{ entry.title }}</strong></div>
+    <div class="pub-title">
+      {% if href %}
+        <a class="pub-link" href="{{ href }}" target="_blank" rel="noopener"><strong>{{ entry.title }}</strong></a>
+      {% else %}
+        <strong>{{ entry.title }}</strong>
+      {% endif %}
+    </div>
   {% endif %}
 
   {% assign venue = entry.journal | default: entry.booktitle | default: entry.publisher %}

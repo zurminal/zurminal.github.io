@@ -58,7 +58,9 @@
 /* Publications compact formatting */
 .pub-entry { margin: 0 0 0.85rem 0; }
 .pub-title { margin: 0 0 0.15rem 0; }
-.pub-venue { color: #0a3d62; font-weight: 700; font-style: italic; margin: 0 0 0.35rem 0; }
+.pub-venue { color: #0a3d62 !important; font-weight: 700; font-style: italic; margin: 0 0 0.35rem 0; }
+.pub-venue strong, .pub-venue em, .pub-venue * { color: #0a3d62 !important; }
+.pub-title .pub-link { text-decoration: none; }
 .bibliography { list-style: disc; }
 .bibliography li { margin: 0 0 0.6rem 0; }
 .pub-actions .btn.btn--small { font-size: 0.8rem; }

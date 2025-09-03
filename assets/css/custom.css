@@ -1,7 +1,7 @@
 /* Highlights grid and card styling */
 .highlights-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.25rem 1.25rem;
   align-items: stretch;
   clear: both;
@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  break-inside: avoid;
 }
 
 .highlights-card .archive__item-title {
@@ -44,9 +45,17 @@
 .section-separator {
   border-top: 1px solid #eaeaea;
   margin: 1.5rem 0 1.25rem 0;
+  column-span: all;
 }
 
 /* Tighten subhead spacing */
-.page__content h2 { margin-top: 1.5rem; clear: both; }
+.page__content h2 { margin-top: 1.5rem; clear: both; column-span: all; }
 
-.highlights-viewall { display: block; margin: 0.5rem 0 1rem; clear: both; }
+.highlights-viewall { display: block; margin: 0.5rem 0 1rem; clear: both; column-span: all; }
+
+/* Ensure theme floats do not affect our cards */
+.highlights-card .archive__item { float: none; width: auto; }
+
+/* Group each section to consume full width in multicol flows */
+.highlights-section { display: block; width: 100%; column-span: all; }
+.highlights-section + .highlights-section { margin-top: 1.75rem; }

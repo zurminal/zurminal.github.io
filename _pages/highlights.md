@@ -12,21 +12,20 @@ Browse highlights by category.
 {% assign media = site.highlights | where_exp: "i", "i.tags contains 'media'" %}
 {% assign career = site.highlights | where_exp: "i", "i.tags contains 'career'" %}
 
-## Awards
-{% include highlights-list.html items=awards limit=6 %}
+<section class="highlights-section">
+  <h2>Awards</h2>
+  {% include highlights-list.html items=awards limit=6 %}
+  <a class="highlights-viewall" href="/highlights/awards/">View all awards</a>
+</section>
 
-<a class="highlights-viewall" href="/highlights/awards/">View all awards</a>
+<section class="highlights-section">
+  <h2>Media Coverage</h2>
+  {% include highlights-list.html items=media limit=6 %}
+  <a class="highlights-viewall" href="/highlights/media/">View all media</a>
+</section>
 
-<div class="section-separator"></div>
-
-## Media Coverage
-{% include highlights-list.html items=media limit=6 %}
-
-<a class="highlights-viewall" href="/highlights/media/">View all media</a>
-
-<div class="section-separator"></div>
-
-## Career
-{% include highlights-list.html items=career limit=6 %}
-
-<a class="highlights-viewall" href="/highlights/career/">View all career highlights</a>
+<section class="highlights-section">
+  <h2>Career</h2>
+  {% include highlights-list.html items=career limit=6 %}
+  <a class="highlights-viewall" href="/highlights/career/">View all career highlights</a>
+</section>

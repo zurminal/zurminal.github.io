@@ -8,4 +8,4 @@ toc: false
 
 Below is a generated list from your BibTeX file, newest first. Replace or edit entries in `assets/bib/references.bib`.
 
-{% bibliography --group_by year --group_order descending %}
+{% bibliography --template scholar_entry --group_by year --group_order descending %}

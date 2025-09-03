@@ -1,0 +1,32 @@
+{% comment %}
+Custom template for jekyll-scholar bibliography entries.
+Renders: Authors (Year). Title (bold). Journal/Booktitle (bold) Vol(Number), pages. Link/placeholder.
+Available variables: entry (hash of bib fields)
+{% endcomment %}
+
+<div class="pub-entry">
+  {% assign authors = entry.author | default: entry.editor %}
+  {% if authors %}{{ authors }}. {% endif %}
+  {% if entry.year %}({{ entry.year }}). {% endif %}
+  {% if entry.title %}<strong>{{ entry.title }}</strong>. {% endif %}
+
+  {% assign venue = entry.journal | default: entry.booktitle | default: entry.publisher %}
+  {% if venue %}<strong>{{ venue }}</strong>{% endif %}
+  {% if entry.volume %}, {{ entry.volume }}{% endif %}
+  {% if entry.number %}({{ entry.number }}){% endif %}
+  {% if entry.pages %}, {{ entry.pages }}{% endif %}.
+
+  {% assign href = nil %}
+  {% if entry.doi %}
+    {% assign href = 'https://doi.org/' | append: entry.doi %}
+  {% elsif entry.url %}
+    {% assign href = entry.url %}
+  {% endif %}
+
+  {% if href %}
+    <a class="btn btn--small" href="{{ href }}" target="_blank" rel="noopener">Link</a>
+  {% else %}
+    <span class="btn btn--small" style="pointer-events:none; opacity:0.6;">Add link</span>
+  {% endif %}
+</div>
+

@@ -58,6 +58,7 @@
 /* Publications compact formatting */
 .pub-entry { margin: 0 0 0.85rem 0; }
 .pub-title { margin: 0 0 0.15rem 0; }
+.pub-title, .pub-title * { font-weight: 400; }
 .pub-venue { color: #0a3d62 !important; font-weight: 700; font-style: italic; margin: 0 0 0.35rem 0; }
 .pub-venue strong, .pub-venue em, .pub-venue * { color: #0a3d62 !important; }
 .pub-title .pub-link { color: #0366d6 !important; text-decoration: none; border-bottom: 0; }

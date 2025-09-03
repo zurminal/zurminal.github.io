@@ -25,9 +25,9 @@ Available variables: entry (hash of bib fields)
   {% if entry.title %}
     <div class="pub-title">
       {% if href %}
-        <a class="pub-link" href="{{ href }}" target="_blank" rel="noopener"><strong>{{ entry.title }}</strong></a>
+        <a class="pub-link" href="{{ href }}" target="_blank" rel="noopener">{{ entry.title }}</a>
       {% else %}
-        <strong>{{ entry.title }}</strong>
+        {{ entry.title }}
       {% endif %}
     </div>
   {% endif %}

@@ -2,7 +2,8 @@
 title: "Highlights"
 permalink: /highlights/
 layout: single
-author_profile: true
+author_profile: false
+classes: wide
 ---
 
 Browse highlights by category.

@@ -14,18 +14,15 @@ Browse highlights by category.
 
 <section class="highlights-section">
   <h2>Awards</h2>
-  {% include highlights-list.html items=awards limit=6 %}
-  <a class="highlights-viewall" href="/highlights/awards/">View all awards</a>
+  {% include highlights-list.html items=awards limit=6 footer_url="/highlights/awards/" footer_label="View all awards" %}
 </section>
 
 <section class="highlights-section">
   <h2>Media Coverage</h2>
-  {% include highlights-list.html items=media limit=6 %}
-  <a class="highlights-viewall" href="/highlights/media/">View all media</a>
+  {% include highlights-list.html items=media limit=6 footer_url="/highlights/media/" footer_label="View all media" %}
 </section>
 
 <section class="highlights-section">
   <h2>Career</h2>
-  {% include highlights-list.html items=career limit=6 %}
-  <a class="highlights-viewall" href="/highlights/career/">View all career highlights</a>
+  {% include highlights-list.html items=career limit=6 footer_url="/highlights/career/" footer_label="View all career highlights" %}
 </section>

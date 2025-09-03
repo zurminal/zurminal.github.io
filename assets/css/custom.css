@@ -53,6 +53,8 @@
 
 .highlights-viewall { display: block; margin: 0.5rem 0 1rem; clear: both; column-span: all; }
 
+.highlights-grid-footer { grid-column: 1 / -1; }
+
 /* Ensure theme floats do not affect our cards */
 .highlights-card .archive__item { float: none; width: auto; }
 

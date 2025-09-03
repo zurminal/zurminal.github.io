@@ -10,19 +10,27 @@ Params:
   {% assign list = list | slice: 0, include.limit %}
 {% endif %}
 
-<div class="grid__wrapper">
+<div class="highlights-grid">
   {% for item in list %}
-  <div class="grid__item">
+  <div class="highlights-card">
     <article class="archive__item">
       <h2 class="archive__item-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
       {% if item.excerpt %}
         <p class="archive__item-excerpt">{{ item.excerpt }}</p>
       {% endif %}
-      {% if item.link %}
-        <p><a class="btn btn--small" href="{{ item.link }}" target="_blank" rel="noopener">Source</a></p>
-      {% endif %}
+      <div class="actions">
+        {% if item.link %}
+          <a class="btn btn--small" href="{{ item.link }}" target="_blank" rel="noopener">Source</a>
+        {% else %}
+          <span class="btn btn--small" style="pointer-events:none; opacity:0.5;">Add link</span>
+        {% endif %}
+      </div>
     </article>
   </div>
   {% endfor %}
+  {% if include.footer_url %}
+  <div class="highlights-grid-footer">
+    <a class="highlights-viewall" href="{{ include.footer_url }}">{{ include.footer_label | default: 'View all' }}</a>
+  </div>
+  {% endif %}
 </div>
-

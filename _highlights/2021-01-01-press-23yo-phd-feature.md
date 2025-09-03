@@ -1,6 +1,6 @@
 ---
 title: "23-Year-Old Earns PhD — Feature Article"
-date: 2021-01-01
+date: 2021-04-11
 excerpt: "Feature article on early PhD completion and the research journey behind it."
 tags: [career]
 # Optional card image for the grid:

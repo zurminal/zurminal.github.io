@@ -55,6 +55,12 @@
 
 .highlights-grid-footer { grid-column: 1 / -1; }
 
+/* Publications compact formatting */
+.pub-entry { margin: 0 0 0.85rem 0; }
+.pub-title { margin: 0 0 0.15rem 0; }
+.pub-venue { color: #0a3d62; font-weight: 700; margin: 0 0 0.35rem 0; }
+.pub-actions .btn.btn--small { font-size: 0.8rem; }
+
 /* Ensure theme floats do not affect our cards */
 .highlights-card .archive__item { float: none; width: auto; }
 

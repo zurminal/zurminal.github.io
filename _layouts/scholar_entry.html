@@ -5,16 +5,16 @@ Available variables: entry (hash of bib fields)
 {% endcomment %}
 
 <div class="pub-entry">
-  {% assign authors = entry.author | default: entry.editor %}
-  {% if authors %}{{ authors }}. {% endif %}
-  {% if entry.year %}({{ entry.year }}). {% endif %}
-  {% if entry.title %}<strong>{{ entry.title }}</strong>. {% endif %}
+  {% if entry.title %}
+    <div class="pub-title"><strong>{{ entry.title }}</strong></div>
+  {% endif %}
 
   {% assign venue = entry.journal | default: entry.booktitle | default: entry.publisher %}
-  {% if venue %}<strong>{{ venue }}</strong>{% endif %}
-  {% if entry.volume %}, {{ entry.volume }}{% endif %}
-  {% if entry.number %}({{ entry.number }}){% endif %}
-  {% if entry.pages %}, {{ entry.pages }}{% endif %}.
+  {% if venue or entry.year %}
+    <div class="pub-venue"><strong>
+      {% if venue %}{{ venue }}{% endif %}{% if venue and entry.year %} · {% endif %}{% if entry.year %}{{ entry.year }}{% endif %}
+    </strong></div>
+  {% endif %}
 
   {% assign href = nil %}
   {% if entry.doi %}
@@ -23,10 +23,11 @@ Available variables: entry (hash of bib fields)
     {% assign href = entry.url %}
   {% endif %}
 
-  {% if href %}
-    <a class="btn btn--small" href="{{ href }}" target="_blank" rel="noopener">Link</a>
-  {% else %}
-    <span class="btn btn--small" style="pointer-events:none; opacity:0.6;">Add link</span>
-  {% endif %}
+  <div class="pub-actions">
+    {% if href %}
+      <a class="btn btn--small" href="{{ href }}" target="_blank" rel="noopener">Link</a>
+    {% else %}
+      <span class="btn btn--small" style="pointer-events:none; opacity:0.6;">Add link</span>
+    {% endif %}
+  </div>
 </div>
-

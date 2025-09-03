@@ -18,13 +18,11 @@ Params:
       {% if item.excerpt %}
         <p class="archive__item-excerpt">{{ item.excerpt }}</p>
       {% endif %}
+      {% if item.link %}
       <div class="actions">
-        {% if item.link %}
-          <a class="btn btn--small" href="{{ item.link }}" target="_blank" rel="noopener">Source</a>
-        {% else %}
-          <span class="btn btn--small" style="pointer-events:none; opacity:0.5;">Add link</span>
-        {% endif %}
+        <a class="btn btn--small" href="{{ item.link }}" target="_blank" rel="noopener">Source</a>
       </div>
+      {% endif %}
     </article>
   </div>
   {% endfor %}

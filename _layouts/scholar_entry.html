@@ -10,24 +10,7 @@ Available variables: entry (hash of bib fields)
   {% endif %}
 
   {% assign venue = entry.journal | default: entry.booktitle | default: entry.publisher %}
-  {% if venue or entry.year %}
-    <div class="pub-venue"><strong>
-      {% if venue %}{{ venue }}{% endif %}{% if venue and entry.year %} · {% endif %}{% if entry.year %}{{ entry.year }}{% endif %}
-    </strong></div>
+  {% if venue %}
+    <div class="pub-venue"><strong><em>{{ venue }}</em></strong></div>
   {% endif %}
-
-  {% assign href = nil %}
-  {% if entry.doi %}
-    {% assign href = 'https://doi.org/' | append: entry.doi %}
-  {% elsif entry.url %}
-    {% assign href = entry.url %}
-  {% endif %}
-
-  <div class="pub-actions">
-    {% if href %}
-      <a class="btn btn--small" href="{{ href }}" target="_blank" rel="noopener">Link</a>
-    {% else %}
-      <span class="btn btn--small" style="pointer-events:none; opacity:0.6;">Add link</span>
-    {% endif %}
-  </div>
 </div>

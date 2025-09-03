@@ -8,16 +8,16 @@ header:
   overlay_image: /assets/images/header.jpg
 feature_row:
   - title: "About"
-    excerpt: "A short bio and background."
+    excerpt: "An overview of my background, research interests, and professional journey."
     url: "/about/"
     btn_label: "Learn more"
     btn_class: "btn--primary"
   - title: "Publications"
-    excerpt: "Selected publications via BibTeX."
+    excerpt: "Peer-reviewed research and selected publications."
     url: "/publications/"
     btn_label: "View"
   - title: "Highlights"
-    excerpt: "Notable updates, media, awards, or milestones."
+    excerpt: "Key milestones, awards, and media coverage"
     url: "/highlights/"
     btn_label: "Browse"
 ---

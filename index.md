@@ -5,7 +5,6 @@ permalink: /
 header:
   overlay_color: "#000"
   overlay_filter: "0.45"
-  overlay_image: /assets/images/header.jpg
 feature_row:
   - title: "About"
     excerpt: "An overview of my background, research interests, and professional journey."

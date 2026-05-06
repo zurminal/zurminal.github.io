@@ -35,14 +35,14 @@ include:
 
 # Author and social
 author:
-  name: "Emmanuel Okogbue "
-  avatar: "/assets/images/avatar.jpg" # replace with your image
+  name: "Emmanuel Okogbue"
+  avatar: "/assets/images/avatar.jpg"
   bio: "Hardware Engineer at Apple Inc"
   location: "Cupertino, CA"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/USERNAME"
+      url: "https://github.com/zurminal"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/eokogbue/"
